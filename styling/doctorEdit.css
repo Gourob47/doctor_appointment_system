@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    text-align: center;
+  }
+.container{
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color:ghostwhite;
+    text-align: center;
+    box-shadow: 2px 2px whitesmoke;
+    
+    
+}
+div>p{
+    font-family: 'Times New Roman', Times, serif;
+    color: 0B2559;
+    font-size: 2rem;
+   
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    border-bottom: 2px solid #0A3A40;
+}
+
+.container1 {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 100px;
+}
+
+h2 {
+    text-align: center;
+    color: 0B2559;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"]
+ {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #304D63;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3F7C85;
+}
+
+
+@media screen and (max-width: 780px) {
+
+    .container1 {
+        background-color: #fff;
+        max-width: 350px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    margin-bottom: 80px;
+      }
+      div>p{
+        font-size: 1.5rem;
+      }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    .container1 {
+        background-color: #fff;
+        max-width: 240px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    margin-bottom: 80px;
+      }
+      div>p{
+        font-size: 1rem;
+      }
+    
+}

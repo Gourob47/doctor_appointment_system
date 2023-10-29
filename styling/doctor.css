@@ -1,0 +1,234 @@
+
+body {
+    margin: 0;
+    
+  }
+.container{
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color:ghostwhite;
+    text-align: center;
+    box-shadow: 2px 2px whitesmoke;
+  
+   
+    
+    
+}
+div>p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #0B2559;
+    font-size: 2rem;
+   
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    border-bottom: 2px solid #0A3A40;
+}
+
+.height{
+    height: 75vh;
+}
+.dept{
+    padding-top: 10px;
+}
+
+select.custom-select {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+select.custom-select option {
+    background-color: #fff;
+    color: #333;
+    font-weight: normal;
+    border: none;
+}
+
+
+.textarea-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.custom-textarea {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; 
+    font-family: Arial, sans-serif;
+}
+
+.custom-textarea::placeholder {
+    color: #999;
+}
+
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 50px;
+   
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+ td {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #304D63;
+    color: white;
+    padding: 13px;
+}
+
+
+.styled-button {
+    background-color: #b63737; 
+    color: #fff;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+.styled-button1 {
+    background-color: #3cb371; 
+    color: #fff;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+
+.styled-button:hover {
+    background-color: #e91010; 
+}
+
+.styled-button1:hover {
+    background-color: green; 
+}
+
+
+
+.tab-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.calendar-input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+.calendar-input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+@media screen and (max-width: 600px) {
+
+    .height{
+        height: auto;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        padding: 8px;
+       
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin-bottom: 0.625em;
+  ;
+    border: 2px solid #0A3A40;
+    box-shadow: 2px 2px aliceblue;
+    padding: 12px;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+        content: "Name: ";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Email: ";
+    }
+    td:nth-of-type(3):before {
+        content: "Phone: ";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Date: ";
+    }
+    td:nth-of-type(5):before {
+        content: "Slot: ";
+    }
+    td:nth-of-type(6):before {
+        content: "Message: ";
+    }
+
+    div>p{
+        font-size: 1rem;
+    }
+
+
+
+}

@@ -1,0 +1,22 @@
+
+.head{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+    background-color:#00CCBF;
+    color: aliceblue;
+    
+}
+
+@media screen and (max-width: 780px) {
+    .head {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        padding: 10px;
+        text-align: center;
+        background-color: #024959;
+        color: aliceblue;
+    }
+
+}
